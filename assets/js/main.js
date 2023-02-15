@@ -1,15 +1,21 @@
-let num1 = prompt("Введіть перше число");
-let num2 = prompt("Введіть друге число");
-let sum = Number(num1) + Number(num2);
+let num1 = Number(prompt("Введіть перше число:"));
+let num2 = Number(prompt("Введіть друге число:"));
+let oper = promt("Введіть знак:");
 
-if (sum > 10) {
-  console.log("ОК");
+if (oper == "+") {
+  console.log(num1 + num2);
 }
 
-let name = prompt("Please enter your name");
+if (oper == "-") {
+  console.log(num1 - num2);
+}
 
-if (name == "Andrew") {
-  console.log("ПРИВІТ");
+if (oper == "*") {
+  console.log(num1 * num2);
+}
+
+if (oper == "/") {
+  console.log(num1 / num2);
 } else {
-  console.log("ХТО ТИ?");
+  console.log("Ви не ввели операцію");
 }
